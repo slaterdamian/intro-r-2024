@@ -55,6 +55,12 @@ typeof(TRUE)
 identical(42, "42")
 
 # variables ----
+x <- "string value" # read as assigning "string" to variable x
+x
+typeof(x)
+x <- 10
+x ^ 2 
+my_var <- 42 # no spaces: 'my var'
 
 
 # data structures ----
