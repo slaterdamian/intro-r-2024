@@ -62,9 +62,24 @@ x <- 10
 x ^ 2 
 my_var <- 42 # no spaces: 'my var'
 
-
 # data structures ----
 # vectors have a single dimension, like a column or row of data
+a <- c("1","2","3") # c() stands for collect (what's inside)
+a
+a <- c(1, 2, 3)
+a
+a + 1
+
+a <- c(1, 2, 3, "4") # all variables auto-type: defaults to what 'works'
+a
+
+a < 3
+
+any(a < 3) # tests for any comparison TRUE
+all(a < 3) # tests for all comparisons TRUE
+
+3 %in% a # testing membership in a vector 
+!4 %in% a # testing membership not in a vector
 
 # data frames - the key structure for data science, multi-dimensional
 #   collections of vectors
