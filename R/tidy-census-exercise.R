@@ -45,3 +45,13 @@ comm_19_raw <- get_acs(geography = "tract",
                        survey = "acs5",
                        geometry = FALSE) # can retrieve spatial geometries 
                                          # pre-joined (SF package)
+comm_19_raw (n=41)
+
+#
+comm_19 <- comm_19_raw |> 
+  pivot_wider(id_cols = GEOID:NAME,
+              names_from = variable,
+              values_from = estimate:moe)
+comm_19
+
+
