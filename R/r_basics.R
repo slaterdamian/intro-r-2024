@@ -83,7 +83,14 @@ all(a < 3) # tests for all comparisons TRUE
 
 # data frames - the key structure for data science, multi-dimensional
 #   collections of vectors
+df <- data.frame(a = c(1,2,3),
+                 b = c("joe", "tammy", "matt")) # collection of vectors
+df
 
+df$a # references single column in data frame
+
+df$mode <- c("bike", "car", "bus") # adding a column
+summary(df)
 
 # Special type: factors, and putting it all together ----
 # factors are categorical variables with a fixed set of
