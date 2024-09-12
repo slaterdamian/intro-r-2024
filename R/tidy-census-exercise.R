@@ -5,5 +5,7 @@ library(tidyr)
 library(ggplot2)
 
 #### Run on first use if not already stored in R ####
-census_api_key("myCensusAPIKey", install = T) # installs into R user environment
+# Prompt the user to input their API key
+api_key <- readline(prompt = "Please enter your API key: ")
+census_api_key(api_key, install = T) # installs into R user environment
 readRenviron("~/.Renviron")
